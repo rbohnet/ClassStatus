@@ -16,5 +16,5 @@ steps:
 - task: Docker@2
   inputs:
     containerRegistry: '0d977f1b-0ee3-4626-b4ab-2905412f43a6'
-    repository: 'UI'
+    repository: 'ui'
     command: 'buildAndPush'
