@@ -13,11 +13,7 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
-- task: WhiteSource Bolt@19
-  inputs:
-    cwd: '$(Agent.BuildDirectory)'
 - task: Docker@2
   inputs:
     containerRegistry: '0d977f1b-0ee3-4626-b4ab-2905412f43a6'
     command: 'buildAndPush'
-    repository: 'ui'
